@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Nginx + PHP-FPM</title>
     <script src="/script.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico">
   </head>
   <body>
 <?php

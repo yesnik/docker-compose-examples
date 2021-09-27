@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  nginx:
+    image: nginx:1.21
+    ports:
+      - 8080:80
+    volumes:
+      - ./src:/app
+      - ./docker/nginx/conf.d:/etc/nginx/conf.d
+    depends_on:
+      - php-fpm
+
+  php-fpm:
+    build:
+      context: docker/php-fpm
+    volumes:
+      - ./src:/app
