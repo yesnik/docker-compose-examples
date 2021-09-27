@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  php-fpm:
+    build:
+      context: ./docker/php-fpm
+    ports:
+      - 9000:9000
+    volumes:
+      - ./src:/app
