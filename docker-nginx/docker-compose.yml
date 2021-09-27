@@ -1,8 +1,7 @@
 version: '3.7'
-
 services:
   nginx:
-    image: nginx:1.15
+    image: nginx:1.21
     ports:
       - 8080:80
     volumes:
