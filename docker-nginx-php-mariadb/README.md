@@ -1,6 +1,6 @@
 # Docker php, nginx, mariadb
 
-This project connects 3 containers:
+This project uses 3 Docker images:
 
 - [php](https://hub.docker.com/_/php/)
 - [nginx](https://hub.docker.com/_/nginx)
@@ -8,7 +8,7 @@ This project connects 3 containers:
 
 ## Software Requirements
 
-- Your OS must have [Docker CE](https://docs.docker.com/install/) to be installed.
+- Ensure that you have [Docker CE](https://docs.docker.com/install/) on your PC.
 
 ## Installation
 
@@ -18,9 +18,7 @@ This project connects 3 containers:
 
 ```
 cd docker-nginx-php-mariadb
-docker-compose up --build
+docker compose up --build
 ``` 
 
 - Open URL in the browser: http://127.0.0.1:8080/
-
-- See the output of the script `public_html/index.php`
