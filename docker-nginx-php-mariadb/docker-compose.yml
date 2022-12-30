@@ -19,6 +19,8 @@ services:
         volumes:
             - ./:/app
         working_dir: /app
+        # Place UID=1000, GID=1000 in the .env file
+        user: $UID:$GID
         depends_on:
             - db
 
@@ -27,6 +29,8 @@ services:
         volumes:
             - ./:/app
         working_dir: /app
+        # Place UID=1000, GID=1000 in the .env file
+        user: $UID:$GID
 
     nginx:
         image: nginx:1.23
